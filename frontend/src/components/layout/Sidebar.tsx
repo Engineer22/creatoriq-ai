@@ -67,7 +67,7 @@ export function Sidebar() {
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs text-slate-400">Credits</span>
             <span className="text-xs font-medium text-slate-300">
-              {user.credits_remaining}/{user.credits_limit}
+              (user as any).credits_remaining || 100/{user.credits_limit}
             </span>
           </div>
           <div className="h-1.5 bg-white/5 rounded-full overflow-hidden">
